@@ -10,7 +10,7 @@ pip install -r requirements.txt
 1. [Создать свое приложение](https://vk.com/apps?act=manage).
 2. Получить client_id приложения: зайти в ["Мои приложения"](https://vk.com/apps?act=manage) --> "Редактировать" --> "Настройки" --> "ID приложения".
 3. Осуществить процедуру Implicit Flow: в web-браузере перейти по ссылке ```https://oauth.vk.com/authorize?client_id=ваш_client_id&display=page&scope=friends,photos,groups,wall,offline&response_type=token&v=5.131``` (не забудьте указать ваш client_id).
-4. После перехода по ссылке вы получите `access_token` , который необходимо присвоить переменной `VK_ACCESS_TOKEN` в файле `.env`.
+4. После перехода по ссылке в адресной строке вы получите `access_token` , который необходимо присвоить переменной `VK_ACCESS_TOKEN` в файле `.env`.
 5. Создать сообщество Вконтакте, [получить его ID](https://regvk.com/id/), и присвоить его переменной `VK_GROUP_ID` в файле `.env`.
 ```
 VK_ACCESS_TOKEN=a666046qv6405ac68c37b965f8835b43c2c9bf0fa3ecb4d9da3a5a85989ebabd042e880701d6f7f687f4b1
