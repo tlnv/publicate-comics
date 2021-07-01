@@ -8,8 +8,8 @@ pip install -r requirements.txt
 ### Как настроить окружение
 Для настройки окружения вам необходимо выполнить следующие действия:
 1. [Создать свое приложение](https://vk.com/apps?act=manage).
-2. Получить client_id приложения: зайти в ["Мои приложения"](https://vk.com/apps?act=manage) --> "Редактировать" --> "Настройки" --> "ID приложения"
-3. Осуществить процедуру Implicit Flow: в web-браузере перейти по ссылке https://oauth.vk.com/authorize?client_id=ваш_client_id&display=page&scope=friends,photos,groups,wall,offline&response_type=token&v=5.131
+2. Получить client_id приложения: зайти в ["Мои приложения"](https://vk.com/apps?act=manage) --> "Редактировать" --> "Настройки" --> "ID приложения".
+3. Осуществить процедуру Implicit Flow: в web-браузере перейти по ссылке `https://oauth.vk.com/authorize?client_id=ваш_client_id&display=page&scope=friends,photos,groups,wall,offline&response_type=token&v=5.131` (не забудьте указать ваш client_id).
 4. После перехода по ссылке вы получите `access_token` , который необходимо присвоить переменной `VK_ACCESS_TOKEN` в файле `.env`.
 5. Создать сообщество Вконтакте, [получить его ID](https://regvk.com/id/), и присвоить его переменной `VK_GROUP_ID` в файле `.env`.
 ```
